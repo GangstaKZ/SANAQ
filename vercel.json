@@ -1,0 +1,11 @@
+{
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/((?!assets/|logo.png|icon.svg|sw.js|workbox-.*|manifest.webmanifest|registerSW.js).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
